@@ -27,12 +27,14 @@
         <div>
           <div class="input-group my-5">
             <input
+              id="task-input"
               type="text"
               class="form-control"
               placeholder="Insert Task"
             />
             <div class="input-group-append">
               <button
+              id="task-button"
                 class="btn btn-outline-secondary"
                 type="submit"
               >
@@ -46,10 +48,33 @@
             <tr>
               <th scope="col">Task</th>
               <th scope="col">Completed</th>
+              <th scope="col"></th>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody id="table-body"></tbody>
         </table>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <input id="task-edit-input" type="text" class="form-control" placeholder="Task">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button id="save-task-button" type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -68,6 +93,8 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="/libraries/uuid.js"></script>
+    <script src="task.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

@@ -7,3 +7,11 @@
     rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
   border-radius: 10px;
 }
+
+.green {
+  color: green;
+}
+
+.pointer {
+  cursor: pointer;
+}
