@@ -18,49 +18,54 @@
     <link rel="stylesheet" href="style.css" />
     <title>Todo App</title>
   </head>
+
   <body>
-    <div class="container d-flex flex-wrap justify-content-center">
-      <div class="card product-card">
-        <h3>Todo List</h3>
-        <hr />
-        <h6>Our simple TODO list</h6>
-        <div>
-          <div class="input-group my-5">
-            <input
-              id="task-input"
-              type="text"
-              class="form-control"
-              placeholder="Insert Task"
-            />
-            <div class="input-group-append">
-              <button
-              id="task-button"
-                class="btn btn-outline-secondary"
-                type="submit"
-              >
-                <i class="fa fa-plus"></i>
-              </button>
+
+    <div> 
+      <div class="container d-flex flex-wrap justify-content-center">
+        <div class="card product-card">
+          <h3>To-do List</h3>
+          <hr />
+          <h6>“Subtracting from your list of priorities is as important as adding to it.” -
+            Frank Sonnenberg</h6>
+          <div>
+            <div class="input-group my-5">
+              <input
+                id="task-input"
+                type="text"
+                class="form-control"
+                placeholder="Insert Task"
+              />
+              <div class="input-group-append">
+                <button
+                id="task-button"
+                  class="btn btn-outline-secondary"
+                  type="submit"
+                >
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
             </div>
           </div>
+          <table class="table table-sm table-bordered mt-2">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Task</th>
+                <th scope="col">Completed</th>
+                <th scope="col">edit/delete</th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
         </div>
-        <table class="table table-sm table-bordered mt-2">
-          <thead class="thead-light">
-            <tr>
-              <th scope="col">Task</th>
-              <th scope="col">Completed</th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody id="table-body"></tbody>
-        </table>
       </div>
-    </div>
+    </div> 
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Edit your task:</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -93,8 +98,10 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <script src="/libraries/uuid.js"></script>
+    <script src="uuid.js"></script>
     <script src="task.js"></script>
     <script src="app.js"></script>
   </body>
+
+
 </html>
