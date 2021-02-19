@@ -1,7 +1,7 @@
 class Task {
-  constructor(task) {
-    this.task = task;
-    this.id = UUID.generate();
+  constructor() {
+    this.id;
+    this.task;
     this.complete = false;
   }
 }

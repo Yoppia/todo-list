@@ -16,17 +16,8 @@
   cursor: pointer;
 }
 
-.box{
-  width: 650px;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 15px;
-  padding: 40px;
-  text-align: center;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  color: black;
-  font-family: 'Century Gothic',sans-serif;
+.hide {
+  visibility: hidden;
 }
 
 body{
@@ -37,3 +28,4 @@ body{
   background-attachment: fixed;
   background-size: cover;
 }
+
